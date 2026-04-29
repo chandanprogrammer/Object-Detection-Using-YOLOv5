@@ -24,6 +24,7 @@ list_of_files = [
     f"{project_name}/pipeline/training_pipeline.py",
     f"{project_name}/utils/__init__.py",
     f"{project_name}/utils/main_utils.py",
+    "reseach/trials.ipynb",
     "templates/index.html",
     "app.py",
     "Dockerfile",
@@ -31,7 +32,7 @@ list_of_files = [
     "setup.py"
 ]
 
-# Logic for creating file and folder 
+# Logic for creating file and folder automatically
 
 for filepath in list_of_files:
     filepath = Path(filepath)
@@ -50,15 +51,4 @@ for filepath in list_of_files:
         logging.info(f"{filename} is already created")
 
 
-    # run in git terminal (git configure with Anaconda3 terminal)--->
-    #  " python template.py " 
-
-    # ---> open Anaconda Prompt Terminal
-    # python
-    # >>> from pathlib import Path
-    # >>> path = "x/z/txt.py"
-    # >>> Path(path)
-    # WindowsPath('x/z/txt.py')
-    # >>> import os
-    # >>> os.path.split(path)
-    # ('x/z', 'txt.py')
+    
